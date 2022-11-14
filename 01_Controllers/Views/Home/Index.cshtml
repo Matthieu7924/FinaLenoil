@@ -1,0 +1,15 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<div class ="text-secondary text-center">
+    Il est @DateTime.Now.ToLongTimeString() secondes. La page est mise en cache?
+</div>
+
+<!-- @Model permet de récupérer les données passées à la vue depuis le controller -->
+<div class="text-danger">@Model</div>

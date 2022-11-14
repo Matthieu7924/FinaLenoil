@@ -1,0 +1,22 @@
+﻿@{
+    ViewData["Title"] = "Privacy Policy";
+
+    var malist = ViewData["stringlist"] as IList<string>;
+
+}
+<h1>@ViewData["Title"]</h1>
+
+<h4 class="text-danger">@ViewBag.Message</h4>
+<h4 class="text-danger">@ViewData["key"]</h4>
+
+<ul>
+    @if (malist is not null)
+    {
+        foreach (var str in malist)
+        {
+            <li>
+                @str
+            </li>
+        }
+    }
+</ul>

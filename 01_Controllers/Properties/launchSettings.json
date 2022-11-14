@@ -1,0 +1,58 @@
+﻿/*
+  Fichier listant les différents profiles à partir desquels il sera possible de lancer l'application
+  Par dafaut 2 profiles disponibles:
+    - l'un portant par défaut le nom du namespace du projet (_01_Controllers) dans le cas présent
+    - IIS Express ( dont les settings par défaut sont définis dans 'iisSettings'
+
+  IIS : Internet Information Service (IIS) : Serveur Web de microsoft
+  */
+
+{
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:61061",
+      "sslPort": 44392
+    }
+  },
+  "profiles": {
+    "MyApp": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": true,
+      "applicationUrl": "https://localhost:7279;http://localhost:5279",
+      "environmentVariables": {
+        // ASPNETCORE_ENVIRONMENT : variable d'environnement iutilisée par ASP .NET Core pour identifier le type d'environnement d'exécution
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "testSettings": "I have been read from launchSettings.json"
+      }
+    },
+    "MyStagingApp": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": true,
+      "applicationUrl": "https://localhost:7279;http://localhost:5279",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Staging", // Environnement de test au plus près possible de l'environnement de Production
+        "testSettings": "I have been read from launchSettings.json"
+      }
+    },
+    "MyProductionApp": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": true,
+      "applicationUrl": "https://localhost:7279;http://localhost:5279",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Production"
+      }
+    },
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}

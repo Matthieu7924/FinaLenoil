@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>_01_Controllers</RootNamespace>
+    <UserSecretsId>66db8a1b-98d9-412d-aafd-0a3935d44667</UserSecretsId>
+  </PropertyGroup>
+
+</Project>

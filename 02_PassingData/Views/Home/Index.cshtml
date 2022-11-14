@@ -1,0 +1,17 @@
+﻿@*On précise que la vue erçoit du controller un object fortement typé de type "Personnage"*@
+@* @model avec un "m" minuscule"*@
+
+@model Personnage
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<div>
+    @Model.Prenom @Model.Nom
+</div>
