@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01_Controllers", "01_Contro
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02_PassingData", "02_PassingData\02_PassingData.csproj", "{0B08F673-0552-44A1-A539-C03A5A03A90E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_RazorPages", "03_RazorPages\03_RazorPages.csproj", "{9CAEBF37-EC5A-4C36-9C18-1A08C357E569}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04_TagHelpers", "04_TagHelpers\04_TagHelpers.csproj", "{050F40F2-0ECC-4DD0-BA1C-8E9AC32554A0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{0B08F673-0552-44A1-A539-C03A5A03A90E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0B08F673-0552-44A1-A539-C03A5A03A90E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0B08F673-0552-44A1-A539-C03A5A03A90E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CAEBF37-EC5A-4C36-9C18-1A08C357E569}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CAEBF37-EC5A-4C36-9C18-1A08C357E569}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CAEBF37-EC5A-4C36-9C18-1A08C357E569}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CAEBF37-EC5A-4C36-9C18-1A08C357E569}.Release|Any CPU.Build.0 = Release|Any CPU
+		{050F40F2-0ECC-4DD0-BA1C-8E9AC32554A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{050F40F2-0ECC-4DD0-BA1C-8E9AC32554A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{050F40F2-0ECC-4DD0-BA1C-8E9AC32554A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{050F40F2-0ECC-4DD0-BA1C-8E9AC32554A0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
