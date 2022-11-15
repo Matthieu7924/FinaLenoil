@@ -8,6 +8,36 @@
 <form method="post" asp-action="Bonjour">
     <div class="mb-3">
         <label asp-for="Name"></label>
-        <input asp-for="Name" class="form-control"/>
+        <input asp-for="Name" class="form-control" />
     </div>
+
+    <div class="mb-3">
+        <label asp-for="Email"></label>
+        <input asp-for="Email" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Salary"></label>
+        <input asp-for="Salary" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="DepartementId"></label>
+        <input asp-for="DepartementId" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Type"></label>
+
+        <select asp-for="Type" class="form-control" asp-items=" Html.GetEnumSelectList<EmployeType>()">
+            <option selected="selected" value="">Please Select</option>
+        </select>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="IsActif"></label>
+        <input asp-for="IsActif" class="form-check-input" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Create</button>
 </form>

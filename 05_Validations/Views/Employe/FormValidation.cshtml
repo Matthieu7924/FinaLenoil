@@ -1,0 +1,68 @@
+﻿@model Employe
+
+@{
+    ViewData["Title"] = "FormValidation";
+}
+
+<h1>FormValidation</h1>
+
+<h4>Employe</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+
+        @*ATTENTION : NE PAS OUBLIER enctype="multipart/form-data" POUR L'UPLOAD*@
+        <form asp-action="FormValidation" enctype="multipart/form-data">
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="UserName" class="control-label"></label>
+                <input asp-for="UserName" class="form-control" />
+                <span asp-validation-for="UserName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Password" class="control-label"></label>
+                <input asp-for="Password" class="form-control" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DateNaissance" class="control-label"></label>
+                <input asp-for="DateNaissance" class="form-control" />
+                <span asp-validation-for="DateNaissance" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Evaluation" class="control-label"></label>
+                <input asp-for="Evaluation" class="form-control" />
+                <span asp-validation-for="Evaluation" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="NumeroTelephone" class="control-label"></label>
+                <input asp-for="NumeroTelephone" class="form-control" />
+                <span asp-validation-for="NumeroTelephone" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Commentaire" class="control-label"></label>
+                <textarea asp-for="Commentaire" class="form-control"></textarea>
+                <span asp-validation-for="Commentaire" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Avatar" class="control-label"></label>
+                <input asp-for="Avatar" class="form-control"/>
+                <span asp-validation-for="Avatar" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

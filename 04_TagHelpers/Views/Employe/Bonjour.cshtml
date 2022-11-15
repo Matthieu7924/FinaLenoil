@@ -1,0 +1,8 @@
+﻿@model Employe
+@{
+    ViewData["Title"] = "Bonjour";
+}
+
+<h2>Custom Helper</h2>
+
+<employe-info for-name=@Model.Name for-salary=@Model.Salary for-type=@Model.Type for-email=@Model.Email />

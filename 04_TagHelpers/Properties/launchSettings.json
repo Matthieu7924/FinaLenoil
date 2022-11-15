@@ -8,7 +8,7 @@
     }
   },
   "profiles": {
-    "_04_TagHelpers": {
+    "TagHelpers": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,

@@ -1,4 +1,4 @@
-namespace _04_TagHelpers.Models
+namespace TagHelpers.Models
 {
     public class ErrorViewModel
     {

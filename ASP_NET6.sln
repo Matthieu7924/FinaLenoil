@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32922.545
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01_Controllers", "01_Controllers\01_Controllers.csproj", "{B128C029-2D24-453D-B0E9-78AEFA49756E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01_Controllers", "01_Controllers\01_Controllers.csproj", "{B128C029-2D24-453D-B0E9-78AEFA49756E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02_PassingData", "02_PassingData\02_PassingData.csproj", "{0B08F673-0552-44A1-A539-C03A5A03A90E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02_PassingData", "02_PassingData\02_PassingData.csproj", "{0B08F673-0552-44A1-A539-C03A5A03A90E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_RazorPages", "03_RazorPages\03_RazorPages.csproj", "{9CAEBF37-EC5A-4C36-9C18-1A08C357E569}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03_RazorPages", "03_RazorPages\03_RazorPages.csproj", "{9CAEBF37-EC5A-4C36-9C18-1A08C357E569}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04_TagHelpers", "04_TagHelpers\04_TagHelpers.csproj", "{050F40F2-0ECC-4DD0-BA1C-8E9AC32554A0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04_TagHelpers", "04_TagHelpers\04_TagHelpers.csproj", "{050F40F2-0ECC-4DD0-BA1C-8E9AC32554A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05_Validations", "05_Validations\05_Validations.csproj", "{80589B36-0935-488A-AF72-31169543D765}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{050F40F2-0ECC-4DD0-BA1C-8E9AC32554A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{050F40F2-0ECC-4DD0-BA1C-8E9AC32554A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{050F40F2-0ECC-4DD0-BA1C-8E9AC32554A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80589B36-0935-488A-AF72-31169543D765}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80589B36-0935-488A-AF72-31169543D765}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80589B36-0935-488A-AF72-31169543D765}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80589B36-0935-488A-AF72-31169543D765}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

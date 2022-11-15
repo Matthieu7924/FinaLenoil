@@ -6,14 +6,18 @@ build_property.ProjectTypeGuids =
 build_property.InvariantGlobalization = 
 build_property.PlatformNeutralAssembly = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
-build_property.RootNamespace = _04_TagHelpers
-build_property.RootNamespace = _04_TagHelpers
+build_property.RootNamespace = TagHelpers
+build_property.RootNamespace = TagHelpers
 build_property.ProjectDir = C:\Users\Admin stagiaire.DESKTOP-8967908\Desktop\ASP_NET6\04_TagHelpers\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
 build_property.MSBuildProjectDirectory = C:\Users\Admin stagiaire.DESKTOP-8967908\Desktop\ASP_NET6\04_TagHelpers
 build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/Admin stagiaire.DESKTOP-8967908/Desktop/ASP_NET6/04_TagHelpers/Views/Employe/Bonjour.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZVxCb25qb3VyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Admin stagiaire.DESKTOP-8967908/Desktop/ASP_NET6/04_TagHelpers/Views/Employe/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbG95ZVxDcmVhdGUuY3NodG1s
@@ -37,4 +41,4 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Admin stagiaire.DESKTOP-8967908/Desktop/ASP_NET6/04_TagHelpers/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = b-ihjuqqy5cn
+build_metadata.AdditionalFiles.CssScope = b-j65xov49xt
