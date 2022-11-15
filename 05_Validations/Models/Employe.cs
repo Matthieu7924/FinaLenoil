@@ -35,6 +35,45 @@ namespace Validations.Models
         public string Commentaire { get; set; } = String.Empty;
 
         [Display(Name = " Uploader avatar : ")]
+        [CustomAvatarValidation]
         public IFormFile? Avatar { get; set; }
     }
+    public class CustomAvatarValidation : ValidationAttribute
+    {
+        public override bool IsValid(object? value)
+        {
+            int maxContentLength = 1024 * 1024; // 1 MB
+            string[] allowedExtensions = new string[] { ".jpg", ".jpeg", ".png" };
+
+
+            if (value is not IFormFile file)
+            {
+                ErrorMessage = "Please upload a file";
+                return false;
+            }
+
+            if (file.Length > maxContentLength)
+            {
+                ErrorMessage = $"Your photo is too large, maximu size is {maxContentLength/1024/1024} MB.";
+                return false;
+            }
+
+
+            // c/blabla/uploads/file.name.ext
+
+            int last = file.FileName.LastIndexOf('.'); // Retourne l'index de la dernière occurence du raractère '.'
+
+            string extension = file.FileName.Substring(last); // Retourne l'extension du fichier
+
+            if (!allowedExtensions.Contains(extension))
+            {
+                ErrorMessage = $"Please upload a photo of type : {String.Join(", ", allowedExtensions)}.";
+
+                return false;
+            }
+            return true;
+        }
+
+    }
+
 }
