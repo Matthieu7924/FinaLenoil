@@ -25,14 +25,17 @@ namespace _06_Entity.Controllers
         {
             if (id == null)
             {
-                return NotFound();
+                // return NotFound();
+                return new StatusCodeResult(StatusCodes.Status400BadRequest);
             }
 
             var product = await _dao.GetById((int)id);
 
             if (product == null)
             {
-                return NotFound();
+                // return NotFound();
+                Response.StatusCode = 404;
+                return View("ProductNotFound", id.Value);
             }
 
             return View(product);
@@ -71,7 +74,9 @@ namespace _06_Entity.Controllers
 
             if (product == null)
             {
-                return NotFound();
+                // return NotFound();
+                Response.StatusCode = 404;
+                return View("ProductNotFound", id.Value);
             }
             return View(product);
         }
@@ -115,7 +120,9 @@ namespace _06_Entity.Controllers
 
             if (product == null)
             {
-                return NotFound();
+                // return NotFound();
+                Response.StatusCode = 404;
+                return View("ProductNotFound", id.Value);
             }
 
             return View(product);

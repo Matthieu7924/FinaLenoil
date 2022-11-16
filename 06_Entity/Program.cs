@@ -1,9 +1,18 @@
 using _06_Entity.DAO;
 using _06_Entity.Models;
 using Microsoft.EntityFrameworkCore;
+using NLog.Extensions.Logging;
+using NLog.Web;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// -- NLog
+// Installer NLog.Web.AspNetCore
+// Créer nlog.config
+// dans les propriétés de nlog.config choisir "copier dans le répertoire de sortie" : "copier si plus récent"
+// Ajoute Nlog à liste des "Logging Provider"
+
+builder.Logging.AddNLog();
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
@@ -25,6 +34,8 @@ if (!app.Environment.IsDevelopment())
     app.UseExceptionHandler("/Home/Error");
     // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
+
+    app.UseStatusCodePagesWithReExecute("/Error/{0}"); // redirige vers l'url /Error/{StatusCode}
 }
 
 app.UseHttpsRedirection();

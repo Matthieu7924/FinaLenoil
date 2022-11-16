@@ -16,4 +16,8 @@
     <Folder Include="wwwroot\uploads\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Include="wwwroot\_06_Entity.styles.css" />
+  </ItemGroup>
+
 </Project>
