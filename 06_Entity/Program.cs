@@ -1,3 +1,4 @@
+using _06_Entity.DAO;
 using _06_Entity.Models;
 using Microsoft.EntityFrameworkCore;
 
@@ -12,6 +13,9 @@ builder.Services.AddControllersWithViews();
 
 builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(
         builder.Configuration.GetConnectionString("DefaultConnection")));
+
+// ----------------- Pour accéder à la couche d'accès aux données des produits
+builder.Services.AddScoped<IProductDAO, ProductDAO>();
 
 var app = builder.Build();
 

@@ -11,9 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03_RazorPages", "03_RazorPa
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04_TagHelpers", "04_TagHelpers\04_TagHelpers.csproj", "{050F40F2-0ECC-4DD0-BA1C-8E9AC32554A0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05_Validations", "05_Validations\05_Validations.csproj", "{80589B36-0935-488A-AF72-31169543D765}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "05_Validations", "05_Validations\05_Validations.csproj", "{80589B36-0935-488A-AF72-31169543D765}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06_Entity", "06_Entity\06_Entity.csproj", "{C77C30A4-6720-42C4-B1BE-36E6C7037C8E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "06_Entity", "06_Entity\06_Entity.csproj", "{C77C30A4-6720-42C4-B1BE-36E6C7037C8E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

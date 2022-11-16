@@ -1,39 +1,35 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.EntityFrameworkCore;
+﻿using _06_Entity.DAO;
 using _06_Entity.Models;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace _06_Entity.Controllers
 {
     public class ProductsController : Controller
     {
-        private readonly ApplicationDbContext _db;
+        private readonly IProductDAO _dao;
 
-        public ProductsController(ApplicationDbContext context)
+        public ProductsController(IProductDAO dao)
         {
-            _db = context;
+            _dao = dao;
         }
 
         // GET: Products
         public async Task<IActionResult> Index()
         {
-              return View(await _db.Products.ToListAsync());
+            return View(await _dao.GetAll());
         }
 
         // GET: Products/Details/5
         public async Task<IActionResult> Details(int? id)
         {
-            if (id == null || _db.Products == null)
+            if (id == null)
             {
                 return NotFound();
             }
 
-            var product = await _db.Products
-                .FirstOrDefaultAsync(m => m.Id == id);
+            var product = await _dao.GetById((int)id);
+
             if (product == null)
             {
                 return NotFound();
@@ -57,8 +53,7 @@ namespace _06_Entity.Controllers
         {
             if (ModelState.IsValid)
             {
-                _db.Add(product);
-                await _db.SaveChangesAsync();
+                await _dao.Create(product);
                 return RedirectToAction(nameof(Index));
             }
             return View(product);
@@ -67,12 +62,13 @@ namespace _06_Entity.Controllers
         // GET: Products/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
-            if (id == null || _db.Products == null)
+            if (id == null)
             {
                 return NotFound();
             }
 
-            var product = await _db.Products.FindAsync(id);
+            var product = await _dao.GetById((int)id);
+
             if (product == null)
             {
                 return NotFound();
@@ -96,19 +92,11 @@ namespace _06_Entity.Controllers
             {
                 try
                 {
-                    _db.Update(product);
-                    await _db.SaveChangesAsync();
+                    await _dao.Update(product);
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!ProductExists(product.Id))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
+                    throw;
                 }
                 return RedirectToAction(nameof(Index));
             }
@@ -118,13 +106,13 @@ namespace _06_Entity.Controllers
         // GET: Products/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
-            if (id == null || _db.Products == null)
+            if (id == null)
             {
                 return NotFound();
             }
 
-            var product = await _db.Products
-                .FirstOrDefaultAsync(m => m.Id == id);
+            var product = await _dao.GetById((int)id);
+
             if (product == null)
             {
                 return NotFound();
@@ -138,23 +126,14 @@ namespace _06_Entity.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id) // On ne peut pas avoir 2 Méthodes "Delete" avec la même signature, alors on change le Nom de la méthode et on inversement celui de l'action associée
         {
-            if (_db.Products == null)
-            {
-                return Problem("Entity set 'ApplicationDbContext.Products'  is null.");
-            }
-            var product = await _db.Products.FindAsync(id);
+            var product = await _dao.GetById((int)id);
+
             if (product != null)
             {
-                _db.Products.Remove(product);
+                await _dao.Delete(product.Id);
             }
-            
-            await _db.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
-        }
 
-        private bool ProductExists(int id)
-        {
-          return _db.Products.Any(e => e.Id == id);
+            return RedirectToAction(nameof(Index));
         }
     }
 }
