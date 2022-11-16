@@ -9,5 +9,7 @@ namespace _06_Entity.DAO
         Task Create(Product product);
         Task Update(Product product);
         Task Delete(int id);
+
+        Task<List<Product>> GetByDescription(string description);
     }
 }

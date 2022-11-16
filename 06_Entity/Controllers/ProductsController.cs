@@ -142,5 +142,38 @@ namespace _06_Entity.Controllers
 
             return RedirectToAction(nameof(Index));
         }
+
+
+        // GET: Products
+        public async Task<IActionResult> Ajax()
+        {
+            return View(await _dao.GetAll());
+        }
+
+        // GET: Products/Details/5
+        public async Task<IActionResult> _Details(int id)
+        {
+            var product = await _dao.GetById(id);
+
+            if (product == null)
+            {
+                return PartialView();
+            }
+
+            return PartialView(product);
+        }
+
+
+        // GET: Products
+        public async Task<IActionResult> IndexFiltered()
+        {
+            // return View(await _dao.GetAll());
+            return View();
+        }
+
+        public async Task<IActionResult> _GetByDescription(string desc)
+        {
+            return PartialView("_IndexPartial", await _dao.GetByDescription(desc));
+        }
     }
 }

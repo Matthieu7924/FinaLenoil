@@ -1,0 +1,53 @@
+﻿@model IEnumerable<Product>
+
+@{
+    ViewData["Title"] = "Index Filterd";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+
+<div>
+    <input id="myInput" type="text" class="form-control" placeholder="Find by Description" oninput="findByDescription();"/>
+</div>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Prix)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody id="products_list">
+
+    </tbody>
+</table>
+
+@section Scripts
+    {
+    <script>
+
+        function findByDescription() {
+
+            $.ajax({
+                type: "Get",
+                url: "/Products/_GetByDescription?desc=" + $("#myInput").val(),
+                success: function (reponse) {
+                    $("#products_list").html(reponse);
+                }
+            });
+        }
+
+        $(document).ready(function () {
+            findByDescription();
+        });
+    </script>
+}

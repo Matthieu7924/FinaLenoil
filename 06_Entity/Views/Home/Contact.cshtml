@@ -1,0 +1,50 @@
+﻿@model EmailViewModel
+
+@{
+    ViewData["Title"] = "Contact";
+}
+
+<h1>Contact</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form autocomplete="off"
+              enctype="multipart/form-data"
+              asp-controller="Home"
+              asp-action="Contact">
+
+            <div asp-validation-summary="All" class="text-danger"></div>
+
+            <div class="form-group">
+                <label asp-for="FromEmail" class="control-label"></label>
+                <input asp-for="FromEmail" class="form-control" />
+                <span asp-validation-for="FromEmail" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Subject" class="control-label"></label>
+                <input asp-for="Subject" class="form-control" />
+                <span asp-validation-for="Subject" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mb-2">
+                <label asp-for="Body" class="control-label"></label>
+                <textarea asp-for="Body" class="form-control"></textarea>
+                <span asp-validation-for="Body" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mb-2">
+                <label class="col-form-label">Select Multiple Files</label>
+                <input asp-for="Attachments" class="form-control" multiple />
+                <span asp-validation-for="Attachments" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Send" class="btn btn-info w-100" />
+            </div>
+        </form>
+    </div>
+</div>
+
+

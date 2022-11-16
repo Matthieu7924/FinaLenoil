@@ -1,0 +1,41 @@
+﻿@model IEnumerable<Product>
+
+@{
+    ViewData["Title"] = "Ajax";
+}
+
+<h1>AJAX</h1>
+
+<div class="mt-3">
+    <select id="select_product" class="form-control" onchange="updateProduct(this.value);">
+        @foreach (var item in Model)
+        {
+            <option value="@item.Id">@item.Description</option>
+        }
+    </select>
+
+    <div id="product_details" class="mt-3">
+
+    </div>
+</div>
+
+@section Scripts
+{
+    <script>
+
+        function updateProduct(id)
+        {
+        $.ajax({
+             type: "Get",
+                url: "/Products/_Details/" + id,
+             success: function(reponse){
+                 $("#product_details").html(reponse);
+             }
+         });
+        }
+
+        $(document).ready(function(){
+            updateProduct($("#select_product").val());
+        });
+    </script>
+}

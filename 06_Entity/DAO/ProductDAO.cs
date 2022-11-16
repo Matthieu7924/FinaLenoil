@@ -34,6 +34,16 @@ namespace _06_Entity.DAO
             return await _db.Products.ToListAsync();
         }
 
+        public async Task<List<Product>> GetByDescription(string description)
+        {
+            if (description is null)
+            {
+                return await GetAll();
+            }
+
+            return await _db.Products.Where(x => x.Description.Contains(description)).ToListAsync();
+        }
+
         public async Task<Product?> GetById(int id)
         {
             // return await _db.Products.FirstOrDefaultAsync(m => m.Id == id);

@@ -1,4 +1,5 @@
 ﻿using _06_Entity.Models;
+using _06_Entity.ViewModel;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
@@ -27,6 +28,11 @@ namespace _06_Entity.Controllers
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        }
+
+        public IActionResult Contact()
+        {
+            return View(new EmailViewModel());
         }
     }
 }
