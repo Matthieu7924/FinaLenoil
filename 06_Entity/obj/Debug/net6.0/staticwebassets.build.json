@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Ydkph0WBWgnNqW4C4q5CR+4u2FPYsFsr+Q/EoOiUx4k=",
+  "Hash": "lL1rhjwHWY58Ncz2XDUzE7AyjKiHiMBMuMiep8zD5Cg=",
   "Source": "06_Entity",
   "BasePath": "_content/06_Entity",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Admin stagiaire.DESKTOP-8967908\\Desktop\\ASP_NET6\\06_Entity\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\06_Entity.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\Admin stagiaire.DESKTOP-8967908\\Desktop\\ASP_NET6\\06_Entity\\wwwroot\\css\\bootswatchTheme.css",
+      "SourceId": "06_Entity",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin stagiaire.DESKTOP-8967908\\Desktop\\ASP_NET6\\06_Entity\\wwwroot\\",
+      "BasePath": "_content/06_Entity",
+      "RelativePath": "css/bootswatchTheme.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\bootswatchTheme.css"
     },
     {
       "Identity": "C:\\Users\\Admin stagiaire.DESKTOP-8967908\\Desktop\\ASP_NET6\\06_Entity\\wwwroot\\css\\site.css",

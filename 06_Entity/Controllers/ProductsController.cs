@@ -58,7 +58,7 @@ namespace _06_Entity.Controllers
             if (ModelState.IsValid)
             {
                 await _dao.Create(product);
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction(nameof(IndexFilteredUnostrusive));
             }
             return View(product);
         }
@@ -104,7 +104,7 @@ namespace _06_Entity.Controllers
                 {
                     throw;
                 }
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction(nameof(IndexFilteredUnostrusive));
             }
             return View(product);
         }
@@ -141,14 +141,14 @@ namespace _06_Entity.Controllers
                 await _dao.Delete(product.Id);
             }
 
-            return RedirectToAction(nameof(Index));
+            return RedirectToAction(nameof(IndexFilteredUnostrusive));
         }
 
 
         // GET: Products
         public async Task<IActionResult> Ajax()
         {
-            return View(await _dao.GetAll());
+            return View((await _dao.GetAll()).Products);
         }
 
         // GET: Products/Details/5
@@ -180,7 +180,6 @@ namespace _06_Entity.Controllers
 
             return PartialView("_IndexPartial", (await _dao.GetAll(vm)).Products);
         }
-
 
         public async Task<IActionResult> IndexFilteredUnostrusive()
         {

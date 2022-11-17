@@ -6,10 +6,6 @@
 
 <h1>Index</h1>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-
 <div>
     <form class="row"
           data-ajax="true"
@@ -20,6 +16,9 @@
         </div>
         <div class="col-auto">
             <button type="submit" class="btn btn-primary">Search</button>
+        </div>
+        <div class="col-auto">
+            <a asp-action="Create" class="btn btn-secondary"><i class="bi bi-plus-circle"></i></a>
         </div>
     </form>
 </div>
@@ -40,21 +39,3 @@
         <partial name="_IndexPartial" model="@Model.Products" />
     </tbody>
 </table>
-
-@*@section Scripts
-    {
-    <script>
-
-        function findByDescription() {
-
-            $.ajax({
-                type: "Get",
-                url: "/Products/_GetByDescription?desc=" + $("#myInput").val(),
-                success: function (reponse) {
-                    $("#products_list").html(reponse);
-                }
-            });
-        }
-
-    </script>
-}*@
