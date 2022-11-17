@@ -12,23 +12,13 @@ namespace _06_Entity.Services
     {
         private readonly EmailSettings _mailSettings;
 
-        public EmailService(/*EmailSettings mailSettings*/)
+        public EmailService(EmailSettings mailSettings)
         {
-            //_mailSettings = mailSettings;
-
-            _mailSettings = new()
-            {
-                Mail = "judd.kris@ethereal.email",
-                DisplayName = "Judd Kris",
-                Password = "SM7pTm2W8RPFV7py2G",
-                Host = "smtp.ethereal.email",
-                Port = 587
-            };
+            _mailSettings = mailSettings;
         }
 
         public async Task SenEmailAsync(EmailViewModel emailViewModel)
         {
-
             MimeMessage email = new();
 
             email.From.Add(new MailboxAddress(emailViewModel.FromEmail, _mailSettings.Mail));

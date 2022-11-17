@@ -1,5 +1,6 @@
 ﻿using _06_Entity.DAO;
 using _06_Entity.Models;
+using _06_Entity.ViewModel;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -17,7 +18,7 @@ namespace _06_Entity.Controllers
         // GET: Products
         public async Task<IActionResult> Index()
         {
-            return View(await _dao.GetAll());
+            return View((await _dao.GetAll()).Products);
         }
 
         // GET: Products/Details/5
@@ -172,7 +173,22 @@ namespace _06_Entity.Controllers
 
         public async Task<IActionResult> _GetByDescription(string desc)
         {
-            return PartialView("_IndexPartial", await _dao.GetAll(desc));
+            ProductsPageViewModel vm = new()
+            {
+                Filter = desc
+            };
+
+            return PartialView("_IndexPartial", (await _dao.GetAll(vm)).Products);
+        }
+
+
+        public async Task<IActionResult> IndexFilteredUnostrusive()
+        {
+            return View(await _dao.GetAll());
+        }
+        public async Task<IActionResult> _IndexPartial(ProductsPageViewModel vm)
+        {
+            return PartialView((await _dao.GetAll(vm)).Products);
         }
     }
 }

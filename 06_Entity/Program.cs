@@ -3,8 +3,10 @@ using _06_Entity.Models;
 using _06_Entity.Services;
 using _06_Entity.Settings;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 using NLog.Extensions.Logging;
 using NLog.Web;
+using System.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -28,8 +30,21 @@ builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlSer
     ));
 // ---------------------
 
-builder.Services.Configure<EmailSettings>(builder.Configuration.GetSection("MailSettings"));
-// builder.Services.AddTransient<IEmailService, EmailService>();
+
+// builder.Services.Configure<EmailSettings>(builder.Configuration.GetSection("MailSettings"));
+
+var mailSettings = builder.Configuration.GetSection("MailSettings");
+
+builder.Services.Add(new ServiceDescriptor(typeof(EmailSettings),
+                                               c => new EmailSettings()
+                                               {
+                                                   Mail = mailSettings.GetValue<string>("Mail"),
+                                                   DisplayName = mailSettings.GetValue<string>("DisplayName"),
+                                                   Password = mailSettings.GetValue<string>("Password"),
+                                                   Host = mailSettings.GetValue<string>("Host"),
+                                                   Port = mailSettings.GetValue<int>("Port")
+                                               }, ServiceLifetime.Transient));
+
 builder.Services.AddScoped<IEmailService, EmailService>();
 
 // ----------------- Pour accéder à la couche d'accès aux données des produits
