@@ -9,9 +9,8 @@ namespace _06_Entity.ViewModel
         [Display(Name ="Your Email")]
         public string FromEmail { get; set; } = String.Empty;
 
-        [Required]
-        [EmailAddress]
-        public string ToEmail { get; set; } = String.Empty;
+        //[EmailAddress]
+        //public string ToEmail { get; set; } = String.Empty;
         public string Subject { get; set; } = String.Empty;
         public string Body { get; set; } = String.Empty;
 

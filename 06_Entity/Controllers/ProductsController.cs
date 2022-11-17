@@ -167,13 +167,12 @@ namespace _06_Entity.Controllers
         // GET: Products
         public async Task<IActionResult> IndexFiltered()
         {
-            // return View(await _dao.GetAll());
-            return View();
+            return View(await _dao.GetAll());
         }
 
         public async Task<IActionResult> _GetByDescription(string desc)
         {
-            return PartialView("_IndexPartial", await _dao.GetByDescription(desc));
+            return PartialView("_IndexPartial", await _dao.GetAll(desc));
         }
     }
 }

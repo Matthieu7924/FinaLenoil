@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "T4uiglhNoVb/YUPSqBbM5j0qQ3KdbBJuo1DmksJm9kY=",
+  "Hash": "hi+3NIZd+T5ZF3VG5HDuDAq7hRHEfwcKMuZdJl/hSH8=",
   "Source": "Validations",
   "BasePath": "_content/Validations",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Admin stagiaire.DESKTOP-8967908\\Desktop\\ASP_NET6\\05_Validations\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Validations.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\Admin stagiaire.DESKTOP-8967908\\Desktop\\ASP_NET6\\05_Validations\\wwwroot\\_06_Entity.styles.css",
+      "SourceId": "Validations",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin stagiaire.DESKTOP-8967908\\Desktop\\ASP_NET6\\05_Validations\\wwwroot\\",
+      "BasePath": "_content/Validations",
+      "RelativePath": "_06_Entity.styles.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\_06_Entity.styles.css"
     },
     {
       "Identity": "C:\\Users\\Admin stagiaire.DESKTOP-8967908\\Desktop\\ASP_NET6\\05_Validations\\wwwroot\\css\\site.css",

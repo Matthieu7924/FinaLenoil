@@ -4,12 +4,10 @@ namespace _06_Entity.DAO
 {
     public interface IProductDAO
     {
-        Task<List<Product>> GetAll();
+        Task<List<Product>> GetAll(string? description = null);
         Task<Product?> GetById(int id);
         Task Create(Product product);
         Task Update(Product product);
         Task Delete(int id);
-
-        Task<List<Product>> GetByDescription(string description);
     }
 }

@@ -1,4 +1,5 @@
 ﻿using _06_Entity.Models;
+using _06_Entity.ViewModel;
 using Microsoft.EntityFrameworkCore;
 
 namespace _06_Entity.DAO
@@ -29,19 +30,39 @@ namespace _06_Entity.DAO
             }
         }
 
-        public async Task<List<Product>> GetAll()
+        public async Task<List<Product>> GetAll(string? description = null)
         {
-            return await _db.Products.ToListAsync();
+            /* if (description is null)
+             {
+                 // return await _db.Products.Where(x => x.Description.Contains(String.Empty)).ToListAsync();
+                 return await _db.Products.ToListAsync();
+             }*/
+
+            int? pageNumber = null;
+            int? pageSize = null;
+
+            return await _db.Products
+                .Where(x => x.Description.Contains(description ?? String.Empty))
+                .Skip((pageNumber ?? 0) * (pageSize ?? 10))
+                .Take(pageSize ?? _db.Products.Count())
+                .ToListAsync();
         }
 
-        public async Task<List<Product>> GetByDescription(string description)
+        public async Task<ProductsPageViewModel> GetAll(ProductsPageViewModel? input)
         {
-            if (description is null)
-            {
-                return await GetAll();
-            }
+            ProductsPageViewModel ppvm = input ?? new(); // ppvm = input si input not null sinon ppvm = mew ProductsPageViewModel()
 
-            return await _db.Products.Where(x => x.Description.Contains(description)).ToListAsync();
+            string description = ppvm.Filter ?? String.Empty;
+            int currentPage = ppvm.CurrentPage ?? 0;
+            int pageSize = ppvm.PageSize ?? _db.Products.Count();
+
+            ppvm.Products = await _db.Products
+                .Where(x => x.Description.Contains(description))
+                .Skip(currentPage * pageSize)
+                .Take(pageSize)
+                .ToListAsync();
+
+            return ppvm;
         }
 
         public async Task<Product?> GetById(int id)

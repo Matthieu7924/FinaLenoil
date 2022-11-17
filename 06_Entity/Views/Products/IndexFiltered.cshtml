@@ -27,7 +27,7 @@
         </tr>
     </thead>
     <tbody id="products_list">
-
+        <partial name="_IndexPartial" model="@Model"/>
     </tbody>
 </table>
 
@@ -46,8 +46,8 @@
             });
         }
 
-        $(document).ready(function () {
-            findByDescription();
-        });
+        //$(document).ready(function () {
+        //    findByDescription();
+        //});
     </script>
 }
