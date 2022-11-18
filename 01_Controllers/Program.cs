@@ -69,7 +69,6 @@ app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
-
 // Middleware de mise en cache
 app.UseResponseCaching();
 app.Use(async (context, next) =>

@@ -27,7 +27,7 @@ namespace Identity.Controllers
         {
             if (ModelState.IsValid)
             {
-                ApplicationUser user = new ApplicationUser
+                ApplicationUser user = new()
                 {
                     UserName = model.Email,
                     Email = model.Email
@@ -37,6 +37,11 @@ namespace Identity.Controllers
 
                 if (result.Succeeded)
                 {
+                    if (_signInManager.IsSignedIn(User) /*&& User.IsInRole("admin")*/)
+                    {
+                        return RedirectToAction("ListUsers", "Administration");
+                    }
+
                     await _signInManager.SignInAsync(user, isPersistent: false);
 
                     return RedirectToAction("Index", "Home");
@@ -52,9 +57,9 @@ namespace Identity.Controllers
         }
 
         [HttpGet]
-        public IActionResult Login()
+        public IActionResult Login(string? returnUrl = null)
         {
-            return View();
+            return View(new LoginViewModel() {ReturnUrl = returnUrl });
         }
 
         [HttpPost]
@@ -66,6 +71,11 @@ namespace Identity.Controllers
 
                 if (result.Succeeded)
                 {
+                    if (!String.IsNullOrEmpty(model.ReturnUrl))
+                    {
+                        return LocalRedirect(model.ReturnUrl);
+                    }
+
                     return RedirectToAction("Index", "Home");
                 }
 

@@ -14,5 +14,7 @@ namespace Identity.ViewModels
 
         [Display(Name ="Remember Me")]
         public bool RememberMe { get; set; }
+
+        public string? ReturnUrl { get; set; }
     }
 }
