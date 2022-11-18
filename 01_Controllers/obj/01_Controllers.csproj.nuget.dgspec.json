@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin stagiaire.DESKTOP-8967908\\Desktop\\ASP_NET6\\01_Controllers\\01_Controllers.csproj": {}
+    "C:\\Users\\Admin\\source\\repos\\ASP_MVC_LIONEL_FINAL\\01_Controllers\\01_Controllers.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin stagiaire.DESKTOP-8967908\\Desktop\\ASP_NET6\\01_Controllers\\01_Controllers.csproj": {
+    "C:\\Users\\Admin\\source\\repos\\ASP_MVC_LIONEL_FINAL\\01_Controllers\\01_Controllers.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin stagiaire.DESKTOP-8967908\\Desktop\\ASP_NET6\\01_Controllers\\01_Controllers.csproj",
+        "projectUniqueName": "C:\\Users\\Admin\\source\\repos\\ASP_MVC_LIONEL_FINAL\\01_Controllers\\01_Controllers.csproj",
         "projectName": "01_Controllers",
-        "projectPath": "C:\\Users\\Admin stagiaire.DESKTOP-8967908\\Desktop\\ASP_NET6\\01_Controllers\\01_Controllers.csproj",
-        "packagesPath": "C:\\Users\\Admin stagiaire.DESKTOP-8967908\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin stagiaire.DESKTOP-8967908\\Desktop\\ASP_NET6\\01_Controllers\\obj\\",
+        "projectPath": "C:\\Users\\Admin\\source\\repos\\ASP_MVC_LIONEL_FINAL\\01_Controllers\\01_Controllers.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Admin\\source\\repos\\ASP_MVC_LIONEL_FINAL\\01_Controllers\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Admin stagiaire.DESKTOP-8967908\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

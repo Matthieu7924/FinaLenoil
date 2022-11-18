@@ -11,8 +11,8 @@ using _06_Entity.Models;
 namespace _06Entity.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20221115135252_AppProductModel")]
-    partial class AppProductModel
+    [Migration("20221118171214_Initial")]
+    partial class Initial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

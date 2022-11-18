@@ -24,3 +24,29 @@ C:\Users\Admin stagiaire.DESKTOP-8967908\Desktop\ASP_NET6\02_PassingData\obj\Deb
 C:\Users\Admin stagiaire.DESKTOP-8967908\Desktop\ASP_NET6\02_PassingData\obj\Debug\net6.0\02_PassingData.pdb
 C:\Users\Admin stagiaire.DESKTOP-8967908\Desktop\ASP_NET6\02_PassingData\obj\Debug\net6.0\02_PassingData.genruntimeconfig.cache
 C:\Users\Admin stagiaire.DESKTOP-8967908\Desktop\ASP_NET6\02_PassingData\obj\Debug\net6.0\ref\02_PassingData.dll
+C:\Users\Admin\Source\Repos\ASP_MVC_LIONEL_FINAL\02_PassingData\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\Admin\Source\Repos\ASP_MVC_LIONEL_FINAL\02_PassingData\bin\Debug\net6.0\appsettings.json
+C:\Users\Admin\Source\Repos\ASP_MVC_LIONEL_FINAL\02_PassingData\bin\Debug\net6.0\02_PassingData.staticwebassets.runtime.json
+C:\Users\Admin\Source\Repos\ASP_MVC_LIONEL_FINAL\02_PassingData\bin\Debug\net6.0\02_PassingData.exe
+C:\Users\Admin\Source\Repos\ASP_MVC_LIONEL_FINAL\02_PassingData\bin\Debug\net6.0\02_PassingData.deps.json
+C:\Users\Admin\Source\Repos\ASP_MVC_LIONEL_FINAL\02_PassingData\bin\Debug\net6.0\02_PassingData.runtimeconfig.json
+C:\Users\Admin\Source\Repos\ASP_MVC_LIONEL_FINAL\02_PassingData\bin\Debug\net6.0\02_PassingData.dll
+C:\Users\Admin\Source\Repos\ASP_MVC_LIONEL_FINAL\02_PassingData\bin\Debug\net6.0\02_PassingData.pdb
+C:\Users\Admin\Source\Repos\ASP_MVC_LIONEL_FINAL\02_PassingData\obj\Debug\net6.0\02_PassingData.csproj.AssemblyReference.cache
+C:\Users\Admin\Source\Repos\ASP_MVC_LIONEL_FINAL\02_PassingData\obj\Debug\net6.0\02_PassingData.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Source\Repos\ASP_MVC_LIONEL_FINAL\02_PassingData\obj\Debug\net6.0\02_PassingData.AssemblyInfoInputs.cache
+C:\Users\Admin\Source\Repos\ASP_MVC_LIONEL_FINAL\02_PassingData\obj\Debug\net6.0\02_PassingData.AssemblyInfo.cs
+C:\Users\Admin\Source\Repos\ASP_MVC_LIONEL_FINAL\02_PassingData\obj\Debug\net6.0\02_PassingData.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Source\Repos\ASP_MVC_LIONEL_FINAL\02_PassingData\obj\Debug\net6.0\02_PassingData.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Admin\Source\Repos\ASP_MVC_LIONEL_FINAL\02_PassingData\obj\Debug\net6.0\02_PassingData.RazorAssemblyInfo.cache
+C:\Users\Admin\Source\Repos\ASP_MVC_LIONEL_FINAL\02_PassingData\obj\Debug\net6.0\02_PassingData.RazorAssemblyInfo.cs
+C:\Users\Admin\Source\Repos\ASP_MVC_LIONEL_FINAL\02_PassingData\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\Admin\Source\Repos\ASP_MVC_LIONEL_FINAL\02_PassingData\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\Admin\Source\Repos\ASP_MVC_LIONEL_FINAL\02_PassingData\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\Admin\Source\Repos\ASP_MVC_LIONEL_FINAL\02_PassingData\obj\Debug\net6.0\scopedcss\bundle\02_PassingData.styles.css
+C:\Users\Admin\Source\Repos\ASP_MVC_LIONEL_FINAL\02_PassingData\obj\Debug\net6.0\scopedcss\projectbundle\02_PassingData.bundle.scp.css
+C:\Users\Admin\Source\Repos\ASP_MVC_LIONEL_FINAL\02_PassingData\obj\Debug\net6.0\02_PassingData.dll
+C:\Users\Admin\Source\Repos\ASP_MVC_LIONEL_FINAL\02_PassingData\obj\Debug\net6.0\refint\02_PassingData.dll
+C:\Users\Admin\Source\Repos\ASP_MVC_LIONEL_FINAL\02_PassingData\obj\Debug\net6.0\02_PassingData.pdb
+C:\Users\Admin\Source\Repos\ASP_MVC_LIONEL_FINAL\02_PassingData\obj\Debug\net6.0\02_PassingData.genruntimeconfig.cache
+C:\Users\Admin\Source\Repos\ASP_MVC_LIONEL_FINAL\02_PassingData\obj\Debug\net6.0\ref\02_PassingData.dll

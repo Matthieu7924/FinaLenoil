@@ -8938,24 +8938,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Admin stagiaire.DESKTOP-8967908\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Admin\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin stagiaire.DESKTOP-8967908\\Desktop\\ASP_NET6\\05_Validations\\05_Validations.csproj",
+      "projectUniqueName": "C:\\Users\\Admin\\Source\\Repos\\ASP_MVC_LIONEL_FINAL\\05_Validations\\05_Validations.csproj",
       "projectName": "Validations",
-      "projectPath": "C:\\Users\\Admin stagiaire.DESKTOP-8967908\\Desktop\\ASP_NET6\\05_Validations\\05_Validations.csproj",
-      "packagesPath": "C:\\Users\\Admin stagiaire.DESKTOP-8967908\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin stagiaire.DESKTOP-8967908\\Desktop\\ASP_NET6\\05_Validations\\obj\\",
+      "projectPath": "C:\\Users\\Admin\\Source\\Repos\\ASP_MVC_LIONEL_FINAL\\05_Validations\\05_Validations.csproj",
+      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Admin\\Source\\Repos\\ASP_MVC_LIONEL_FINAL\\05_Validations\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Admin stagiaire.DESKTOP-8967908\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

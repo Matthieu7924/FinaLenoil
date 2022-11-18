@@ -25,3 +25,30 @@ C:\Users\Admin stagiaire.DESKTOP-8967908\Desktop\ASP_NET6\03_RazorPages\obj\Debu
 C:\Users\Admin stagiaire.DESKTOP-8967908\Desktop\ASP_NET6\03_RazorPages\obj\Debug\net6.0\03_RazorPages.pdb
 C:\Users\Admin stagiaire.DESKTOP-8967908\Desktop\ASP_NET6\03_RazorPages\obj\Debug\net6.0\03_RazorPages.genruntimeconfig.cache
 C:\Users\Admin stagiaire.DESKTOP-8967908\Desktop\ASP_NET6\03_RazorPages\obj\Debug\net6.0\ref\03_RazorPages.dll
+C:\Users\Admin\Source\Repos\ASP_MVC_LIONEL_FINAL\03_RazorPages\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\Admin\Source\Repos\ASP_MVC_LIONEL_FINAL\03_RazorPages\bin\Debug\net6.0\appsettings.json
+C:\Users\Admin\Source\Repos\ASP_MVC_LIONEL_FINAL\03_RazorPages\bin\Debug\net6.0\03_RazorPages.staticwebassets.runtime.json
+C:\Users\Admin\Source\Repos\ASP_MVC_LIONEL_FINAL\03_RazorPages\bin\Debug\net6.0\03_RazorPages.exe
+C:\Users\Admin\Source\Repos\ASP_MVC_LIONEL_FINAL\03_RazorPages\bin\Debug\net6.0\03_RazorPages.deps.json
+C:\Users\Admin\Source\Repos\ASP_MVC_LIONEL_FINAL\03_RazorPages\bin\Debug\net6.0\03_RazorPages.runtimeconfig.json
+C:\Users\Admin\Source\Repos\ASP_MVC_LIONEL_FINAL\03_RazorPages\bin\Debug\net6.0\03_RazorPages.dll
+C:\Users\Admin\Source\Repos\ASP_MVC_LIONEL_FINAL\03_RazorPages\bin\Debug\net6.0\03_RazorPages.pdb
+C:\Users\Admin\Source\Repos\ASP_MVC_LIONEL_FINAL\03_RazorPages\obj\Debug\net6.0\03_RazorPages.csproj.AssemblyReference.cache
+C:\Users\Admin\Source\Repos\ASP_MVC_LIONEL_FINAL\03_RazorPages\obj\Debug\net6.0\03_RazorPages.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Source\Repos\ASP_MVC_LIONEL_FINAL\03_RazorPages\obj\Debug\net6.0\03_RazorPages.AssemblyInfoInputs.cache
+C:\Users\Admin\Source\Repos\ASP_MVC_LIONEL_FINAL\03_RazorPages\obj\Debug\net6.0\03_RazorPages.AssemblyInfo.cs
+C:\Users\Admin\Source\Repos\ASP_MVC_LIONEL_FINAL\03_RazorPages\obj\Debug\net6.0\03_RazorPages.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Source\Repos\ASP_MVC_LIONEL_FINAL\03_RazorPages\obj\Debug\net6.0\03_RazorPages.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Admin\Source\Repos\ASP_MVC_LIONEL_FINAL\03_RazorPages\obj\Debug\net6.0\03_RazorPages.RazorAssemblyInfo.cache
+C:\Users\Admin\Source\Repos\ASP_MVC_LIONEL_FINAL\03_RazorPages\obj\Debug\net6.0\03_RazorPages.RazorAssemblyInfo.cs
+C:\Users\Admin\Source\Repos\ASP_MVC_LIONEL_FINAL\03_RazorPages\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\Admin\Source\Repos\ASP_MVC_LIONEL_FINAL\03_RazorPages\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\Admin\Source\Repos\ASP_MVC_LIONEL_FINAL\03_RazorPages\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\Admin\Source\Repos\ASP_MVC_LIONEL_FINAL\03_RazorPages\obj\Debug\net6.0\scopedcss\Views\Shared\_LayoutCustom.cshtml.rz.scp.css
+C:\Users\Admin\Source\Repos\ASP_MVC_LIONEL_FINAL\03_RazorPages\obj\Debug\net6.0\scopedcss\bundle\03_RazorPages.styles.css
+C:\Users\Admin\Source\Repos\ASP_MVC_LIONEL_FINAL\03_RazorPages\obj\Debug\net6.0\scopedcss\projectbundle\03_RazorPages.bundle.scp.css
+C:\Users\Admin\Source\Repos\ASP_MVC_LIONEL_FINAL\03_RazorPages\obj\Debug\net6.0\03_RazorPages.dll
+C:\Users\Admin\Source\Repos\ASP_MVC_LIONEL_FINAL\03_RazorPages\obj\Debug\net6.0\refint\03_RazorPages.dll
+C:\Users\Admin\Source\Repos\ASP_MVC_LIONEL_FINAL\03_RazorPages\obj\Debug\net6.0\03_RazorPages.pdb
+C:\Users\Admin\Source\Repos\ASP_MVC_LIONEL_FINAL\03_RazorPages\obj\Debug\net6.0\03_RazorPages.genruntimeconfig.cache
+C:\Users\Admin\Source\Repos\ASP_MVC_LIONEL_FINAL\03_RazorPages\obj\Debug\net6.0\ref\03_RazorPages.dll
