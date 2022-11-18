@@ -6,14 +6,30 @@ build_property.ProjectTypeGuids =
 build_property.InvariantGlobalization = 
 build_property.PlatformNeutralAssembly = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
-build_property.RootNamespace = _07_Identity
-build_property.RootNamespace = _07_Identity
+build_property.RootNamespace = Identity
+build_property.RootNamespace = Identity
 build_property.ProjectDir = C:\Users\Admin stagiaire.DESKTOP-8967908\Desktop\ASP_NET6\07_Identity\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
 build_property.MSBuildProjectDirectory = C:\Users\Admin stagiaire.DESKTOP-8967908\Desktop\ASP_NET6\07_Identity
 build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/Admin stagiaire.DESKTOP-8967908/Desktop/ASP_NET6/07_Identity/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin stagiaire.DESKTOP-8967908/Desktop/ASP_NET6/07_Identity/Views/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin stagiaire.DESKTOP-8967908/Desktop/ASP_NET6/07_Identity/Views/Administration/CreateRole.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYXRpb25cQ3JlYXRlUm9sZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin stagiaire.DESKTOP-8967908/Desktop/ASP_NET6/07_Identity/Views/Administration/ListRoles.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5pc3RyYXRpb25cTGlzdFJvbGVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Admin stagiaire.DESKTOP-8967908/Desktop/ASP_NET6/07_Identity/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
@@ -41,4 +57,4 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Admin stagiaire.DESKTOP-8967908/Desktop/ASP_NET6/07_Identity/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = b-3n0fpagr8l
+build_metadata.AdditionalFiles.CssScope = b-elpxs0ehl7

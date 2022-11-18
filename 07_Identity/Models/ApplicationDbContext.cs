@@ -1,8 +1,8 @@
-﻿using _07_Identity.Models.Configuration;
+﻿using Identity.Models.Configuration;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
-namespace _07_Identity.Models
+namespace Identity.Models
 {
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {

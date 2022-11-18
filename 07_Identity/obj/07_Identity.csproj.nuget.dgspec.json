@@ -8,7 +8,7 @@
       "version": "1.0.0",
       "restore": {
         "projectUniqueName": "C:\\Users\\Admin stagiaire.DESKTOP-8967908\\Desktop\\ASP_NET6\\07_Identity\\07_Identity.csproj",
-        "projectName": "07_Identity",
+        "projectName": "Identity",
         "projectPath": "C:\\Users\\Admin stagiaire.DESKTOP-8967908\\Desktop\\ASP_NET6\\07_Identity\\07_Identity.csproj",
         "packagesPath": "C:\\Users\\Admin stagiaire.DESKTOP-8967908\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Admin stagiaire.DESKTOP-8967908\\Desktop\\ASP_NET6\\07_Identity\\obj\\",
@@ -61,6 +61,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[7.0.0, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[6.0.10, )"
             }
           },
           "imports": [

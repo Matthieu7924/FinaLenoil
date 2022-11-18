@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace _07_Identity.Models.Configuration
+namespace Identity.Models.Configuration
 {
     public class AdminConfiguration : IEntityTypeConfiguration<ApplicationUser>
     {

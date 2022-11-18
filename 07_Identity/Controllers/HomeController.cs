@@ -1,8 +1,8 @@
-﻿using _07_Identity.ViewModels;
+﻿using Identity.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
-namespace _07_Identity.Controllers
+namespace Identity.Controllers
 {
     public class HomeController : Controller
     {

@@ -8,7 +8,7 @@
     }
   },
   "profiles": {
-    "_07_Identity": {
+    "Identity": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,
